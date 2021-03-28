@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>WMS - WFS - WMTS</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+ <link rel="stylesheet" href="./style.css">
+<title>Demo leaflet.TileLayer.WMTS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>        
+<script src="https://rawgithub.com/mylen/leaflet.TileLayer.WMTS/master/leaflet-tilelayer-wmts.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+
+
+
+
+  	<link rel="shortcut icon" type="image/x-icon"  />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.7.2/proj4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.2/proj4leaflet.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col col-sm-12">
+     <h1 class="title">ÖRNEK OGC SERVİSLERİ</h1> 
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col col-sm-12">
+      <div><h2>Web Map Service (Web Harita Servisi, WMS) </h2></div>
+      <div id="map">  </div>
+    </div>
+  
+
+  </div>
+  <div class="row">
+  
+    <div class="col col-sm-12">
+      <div><h2>Web Map Tile Service (Web Harita Döşeme Servisi, WMTS)</h2></div>
+      <div id="map2">  </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+   <div class="col col-sm-12">
+    <div><h2>Web Feature Service (Web Detay Servisi, WFS) - Servis Verileri İle Harita</h2></div>
+    <div id='map3'></div>
+      
+   </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col col-sm-12">
+     <div><h2>Web Feature Service (Web Detay Servisi, WFS) - Servis Verileri İle Grafik</h2></div>
+     <div id="chartdiv"></div>
+  
+ 
+   </div>
+
+
+</div>
+
+
+
+</div>  
+ 
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+  <script  src="./wmts-script.js"></script>
+  <script  src="./wfs-script.js"></script>
+
+</body>
+</html>
